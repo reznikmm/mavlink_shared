@@ -1,6 +1,6 @@
 # mavlink_shared
 
-[![Build with Alire](https://github.com/reznikmm/mavlink_shared/actions/workflows/alire.yml/badge.svg?branch=v2)](https://github.com/reznikmm/mavlink_shared/actions/workflows/alire.yml)
+[![Build with Alire](https://github.com/reznikmm/mavlink_shared/actions/workflows/alire.yml/badge.svg)](https://github.com/reznikmm/mavlink_shared/actions/workflows/alire.yml)
 [![Alire](https://img.shields.io/endpoint?url=https://alire.ada.dev/badges/mavlink_shared.json)](https://alire.ada.dev/crates/mavlink_shared.html)
 
 > MAVLink -- Micro Air Vehicle Message Marshalling Library.
@@ -39,15 +39,15 @@ Instead use required MAVLink dialect/version:
 
 ## Mavlink commit id
 
-The code was generated from `e31f7de` commit of
+The code was generated from `b1fb5a1` commit of
 the [mavlink](https://github.com/mavlink/mavlink) repo.
-And `a365606` from `ReladormAndry/pymavlink`.
+And `a5812a8` from [pymavlink](https://github.com/ardupilot/pymavlink) repo.
 I used this steps:
 
 ```shell
 python -m venv venv
 source venv/bin/activate
-git clone --depth=1 -b version2 https://github.com/ReladormAndry/pymavlink/
+git clone --depth=1 https://github.com/ardupilot/pymavlink/
 git clone --depth=1 https://github.com/mavlink/mavlink
 MDEF=$PWD/mavlink/message_definitions python -m pip install pymavlink
 
